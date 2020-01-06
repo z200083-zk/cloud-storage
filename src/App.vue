@@ -12,9 +12,5 @@ export default {};
 #app {
   width: 100%;
   height: 100%;
-  // #home {
-  //   width: 100%;
-  //   height: 100%;
-  // }
 }
 </style>

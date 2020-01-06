@@ -21,10 +21,9 @@ export default {
         "userfile",
         this.$refs.asd.files[0]
       );
-      console.log(this.$refs.asd.files[0]);
       let options = {
         // 设置axios的参数
-        url: "http://127.0.0.1:3001/upload",
+        url: "http://127.0.0.1:20083/serve/upload",
         data: formData,
         method: "post",
         headers: {
