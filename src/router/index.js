@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home'
 import Upload from '../views/upload'
 import image from '../views/imagePage'
+import video from '../views/videoPage'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/image',
     name: 'image',
     component: image
+  },
+  {
+    path: '/video',
+    name: 'video',
+    component: video
   }
 ]
 
