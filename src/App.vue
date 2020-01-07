@@ -5,7 +5,7 @@
         <img class="logo-img" :src="logoImg.data" />
         <span>{{logoImg.text}}</span>
       </div>
-      <div class="user">
+      <div class="user center">
         <span>ZK</span>
         <!-- <img src alt="ZK" /> -->
       </div>
@@ -34,21 +34,29 @@ export default {
   height: 100%;
   color: #fff;
   background-color: #1e90ff;
+  box-sizing: border-box;
+  padding-top: 5vh;
+  position: relative;
   .top {
-    height: 48px;
+    width: 100%;
+    height: 5vh;
     padding: 0 5vw;
-    line-height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
     .logo {
       width: 90px;
       height: 100%;
-      float: left;
       .logo-img {
         width: 30px;
       }
     }
     .user {
       height: 100%;
-      float: right;
       img {
         width: 30px;
         height: 30px;

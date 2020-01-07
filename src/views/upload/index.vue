@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import axios from "axios";
+import { uploadFile } from "@/ultis/http";
 export default {
   data() {
     return {
@@ -25,16 +25,7 @@ export default {
       }
       let formData = new window.FormData();
       formData.append("userfile", this.$refs.upload.files[0]);
-      let options = {
-        // 设置axios的参数
-        url: "http://127.0.0.1:20083/serve/upload",
-        data: formData,
-        method: "post",
-        headers: {
-          "Content-Type": "multipart/form-data"
-        }
-      };
-      axios(options).then(res => {
+      uploadFile(formData).then(res => {
         console.log(res);
       });
     }
