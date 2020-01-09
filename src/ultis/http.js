@@ -15,9 +15,6 @@ export const uploadFile = (formData) => {
 export const getFileList = (cat)=>{
     return http.get(`/serve/public?cat=${cat}`)
 }
-export const getFileVideo = (cat)=>{
-    return (`http://127.0.0.1:20083/video/${cat}?cat=${cat}`)
-}
-export const getFileImage = (cat)=>{
-    return (`http://127.0.0.1:20083/image/${cat}?cat=${cat}`)
+export const getFile = (cat,fileName)=>{
+    return (`http://127.0.0.1:20083/public/${cat}/${fileName}?fileName=${fileName}`)
 }

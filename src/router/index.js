@@ -2,8 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home'
 import Upload from '../views/upload'
-import image from '../views/imagePage'
-import video from '../views/videoPage'
+import content from '../views/imagePage'
 
 Vue.use(VueRouter)
 
@@ -19,14 +18,9 @@ const routes = [
     component: Upload
   },
   {
-    path: '/image',
-    name: 'image',
-    component: image
-  },
-  {
-    path: '/video',
-    name: 'video',
-    component: video
+    path: '/content/:cat',
+    name: 'content',
+    component: content
   }
 ]
 
