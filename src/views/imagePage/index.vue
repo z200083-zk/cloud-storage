@@ -7,7 +7,7 @@
     <div class="img-main" v-if="currentPage.cat === 'image'">
       <div class="img-list" v-if="!isDownload">
         <div class="img-item center" v-for="(item,i) in res" :key="i">
-          <img :src="`http://127.0.0.1:20083/public/image/${item.fileName}`" @click="tapDown(item)" />
+          <img :src="`https://m.z200083.xyz/media/image/${item.fileName}`" @click="tapDown(item)" />
         </div>
       </div>
     </div>
@@ -29,7 +29,7 @@
       <div class="download-box">
         <img
           class="download-img"
-          :src="`http://127.0.0.1:20083/public/image/${currentData.fileName}`"
+          :src="`https://m.z200083.xyz/media/image/${currentData.fileName}`"
           v-if="currentPage.cat === 'image'"
         />
         <img class="download-img" :src="currentPage.data" v-else />
@@ -85,6 +85,7 @@ export default {
       window.open(this.currentUrl);
     },
     async onLoad() {
+      this.res = [];
       let res = await getFileList(this.currentPage.cat);
       this.res = res.data;
     },

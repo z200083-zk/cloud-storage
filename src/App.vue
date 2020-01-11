@@ -121,7 +121,7 @@ export default {
   color: #fff;
   background-color: #1e90ff;
   box-sizing: border-box;
-  padding-top: 5vh;
+  padding-top: 6vh;
   position: relative;
   .top {
     width: 100%;
