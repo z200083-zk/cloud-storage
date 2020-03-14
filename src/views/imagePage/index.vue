@@ -227,7 +227,7 @@ export default {
     }
   }
   .footer {
-    height: 5vh;
+    height: 4vh;
   }
 }
 ::-webkit-scrollbar {
